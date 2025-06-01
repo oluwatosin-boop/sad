@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #0f0f0f;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo span {
+    color: #ff0000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: hsl(0, 100%, 50%);
+  }
+  
+  .follow-btn {
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .follow-btn:hover {
+    background-color: #ff0000;
+    color: #0f0f0f;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    max-width: 500px;
+  }
+  
+  .hero-text h3 {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+    .hero-text p span{
+color: hsl(0, 100%, 50%);
+font-size: 1.5rem;
+    }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+  
+  .hero-text h1 span {
+    color: hsl(0, 100%, 50%);
+  }
+  
+  .highlight {
+    color: hsl(352, 100%, 50%);
+  }
+  
+  .social-icons {
+    margin: 20px 0;
+  }
+  
+  .social-icons a {
+    color: hsl(0, 100%, 50%);
+    font-size: 1.2rem;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  .cv-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #ff0000;
+    border: 1px solid hsl(0, 100%, 50%);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .cv-btn:hover {
+    background: hsl(357, 100%, 50%);
+    color: #0f0f0f;
+  }
+  
+  .hero-img {
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .hero-img img {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px hsl(357, 100%, 50%);
+  }
+  .nav-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .dark-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #ff0000;
+  }
+  
+  /* Light Mode Styles */
+  body.dark-mode {
+    background-color: #ffffff;
+    color: #0f0f0f;
+  }
+  
+  body.dark-mode .navbar,
+  body.dark-mode .hero {
+    background-color: #ffffff;
+  }
+  
+  body.light-mode .logo span,
+  body.light-mode .highlight,
+  body.light-mode .social-icons a,
+  body.light-mode .cv-btn,
+  body.light-mode .follow-btn {
+    color: #0077b6;
+    border-color: #0077b6;
+  }
+  
+  body.light-mode .cv-btn:hover,
+  body.light-mode .follow-btn:hover {
+    background-color: #0077b6;
+    color: white;
+  }
+  
+  body.light-mode .hero-img img {
+    box-shadow: 0 0 20px #0077b6;
+  }
+  nav a {
+    color: #ff0000;
+    color: ; /* Change this to any color you like */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    margin-right: 15px; /* Space between links */
+  }
+  
+  nav a:hover {
+    color: #0056b3; /* Color when you hover over a link */
+    text-decoration: underline; /* Optional: underline on hover */
+  }
+  .skill-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .skill-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    box-shadow: 0 4px 8px rgba(38, 67, 255, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+  }
+  
+  .skill-btn img.skill-logo {
+    width: 28px;
+    height: 28px;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+  }
+  
+  .skill-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 12px rgba(38, 67, 255, 0.5);
+    transform: translateY(-3px);
+  }
+  
+  .skill-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(38, 67, 255, 0.4);
+  }
+  .skill-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .skill-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    box-shadow: 0 4px 8px rgba(38, 67, 255, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+  }
+  
+  .skill-btn img.skill-logo {
+    width: 28px;
+    height: 28px;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+  }
+  
+  .skill-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 12px rgba(38, 67, 255, 0.5);
+    transform: translateY(-3px);
+  }
+  
+  .skill-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(38, 67, 255, 0.4);
+  }
+  #skills-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  #skills-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: default;
+  }
+  
+  #skills-buttons button img {
+    width: 20px;
+    height: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;     /* prevent line wrap */
+    padding: 10px 20px;
+  }
+  
+  nav a {
+    margin-left: 215px;     /* space between links by margin */
+    color: hsl(0, 100%, 50%);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Remove left margin from first link so it aligns right cleanly */
+  nav a:first-child {
+    margin-left: 0;
+  }
+  
+  nav a:hover {
+    background-color:white;
+    color: #fd0303;
+    
+  }
+  h2{
+    color: lch(53.06% 102.16 39.29);
+    
+  }
+  .multimedia-showcase{
+    background-color: hsl(352, 100%, 50%);
+  }
+  #contact a{
+color: hsl(0, 100%, 50%);
+text-decoration: none;
+  }

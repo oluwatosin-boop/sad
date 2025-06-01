@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+        integrity="sha512-pap3vY2QaFbTSTzFxNHRqzoPRsbZ+O3iJzvzmPzRzYjvZzmSz0fI8fYHLNPu7VJZLaA4Fvlc/peeqJ60sOQ+Aw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Port<span>folio</span></div>
+      <nav>
+        <a href="#about">About</a> |
+        <a href="#multimedia-showcase">Multimedia</a> |
+        <a href="#interactive-skills">Skills</a> |
+        <a href="#contact">Contact Me</a>
+      </nav>
+      <button class="follow-btn">Follow Me</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hello, my name is</h2>
+      <h1>Omotayo <span>Oluwatosin Blessing</span></h1>
+      <p>I'm a <span>Web Developer</span></p>
+      <div class="social-icons">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+      <a class="cv-btn" href="#">Hire Me</a>
+    </div>
+    <div class="hero-image">
+        <img src="picture .jpg" width="300" height="400" >
+    </div>
+      
+
+          <section id="about">
+            <img src="prof pic.jpg" alt="A professional photo of me" width="200">
+            <h2>About Me</h2>
+<p>My name is omotayo oluwatosin blessing I’m a professionally trained computer scientist with a deep knowledge for web development and problem solving 
+I’m aiming as a web developer to 
+   Building user-friendly websites: creating intuitive and engaging interfaces<br><br>
+   Developing functional web applications: designing and implementing features that meet user needs<br><br>
+   Ensuring cross-browser compatibility: making sure websites work smoothly across different browsers and devices<br><br>
+   Optimizing website performance: improving load times, speed, and overall user experience<br><br>
+   Staying up-to-date with industry trends: continuously learning and adapting to new technologies and best practices<br><br>
+In conclusion I will continue to stay updated and follow industry trends and advancement expanding my skills exploring new technologies and techniques
+            </p>
+          </section>
+            <section id="vide/multimedia-showcase">
+           <h2>Multimedia Showcase</h2>
+           
+           
+
+            <h3>My Audio Greeting:</h3>
+            <audio controls>
+              <source src="welcome-to-paradise-96902.mp3" type="audio/mpeg" />
+              
+            
+            </audio>
+      
+            <h3>Project Video:</h3>
+            <video controls width="320" height="240">
+              <source src="WhatsApp Video 2025-06-01 at 15.02.35_1428660a.mp4"type="video/mp4" />
+              Your browser does not support video.
+            
+            </video>
+            <video controls width="320" height="220">
+                <source src="Recording 2025-06-01 160919.mp4"type="video/mp4" />
+                Your browser does not support video.
+                
+            </video>
+          </section>
+
+          <section id="interactive-skills">
+            <h2>My Skills</h2>
+            <div class="skill-item">
+                <div class="skill-name">Creativity</div>
+                <div class="circle-wrap">
+                  <svg width="60" height="60">
+                    <circle class="circle-bg" cx="30" cy="30" r="26" stroke-width="6" fill="none" />
+                    <circle class="circle-progress" cx="30" cy="30" r="26" stroke-width="6" fill="none"
+                            stroke-dasharray="163.36"
+                            stroke-dashoffset="8.17" />
+                  </svg>
+                  <div class="circle-text">95%</div>
+                </div>
+              </div>
+            
+              <div class="skill-item">
+                <div class="skill-name">Teamwork</div>
+                <div class="circle-wrap">
+                  <svg width="60" height="60">
+                    <circle class="circle-bg" cx="30" cy="30" r="26" stroke-width="6" fill="none" />
+                    <circle class="circle-progress" cx="30" cy="30" r="26" stroke-width="6" fill="none"
+                            stroke-dasharray="163.36"
+                            stroke-dashoffset="24.5" />
+                  </svg>
+                  <div class="circle-text">85%</div>
+                </div>
+              </div>
+            
+              <div class="skill-item">
+                <div class="skill-name">Coding</div>
+                <div class="circle-wrap">
+                  <svg width="60" height="60">
+                    <circle class="circle-bg" cx="30" cy="30" r="26" stroke-width="6" fill="none" />
+                    <circle class="circle-progress" cx="30" cy="30" r="26" stroke-width="6" fill="none"
+                            stroke-dasharray="163.36"
+                            stroke-dashoffset="40.84" />
+                  </svg>
+                  <div class="circle-text">75%</div>
+                </div>
+              </div>
+            <div id="skills-buttons">
+              <button class="skill-btn" data-skill="HTML">
+                <img src="html.jpg" height="230" class="skill-logo" />
+                HTML
+              </button>
+              <button class="skill-btn" data-skill="CSS">
+                <img src="css.jpg" height="230" width="300" class="skill-logo" />
+                CSS
+              </button>
+              <button class="skill-btn" data-skill="JavaScript">
+                <img src="js.jpg"  height="230" class="skill-logo" />
+                JavaScript
+              </button>
+              <button class="skill-btn" data-skill="React">
+                <img src="react.jpg" height="230" class="skill-logo" />
+                React
+              </button>
+              <button class="skill-btn" data-skill="Node.js">
+                <img src="node.jpg" height="230" class="skill-logo" />
+                Node.js
+              </button>
+            </div>
+            <p id="skill-description">Click a skill to learn more!</p>
+          </section>
+          <div>
+          <section id="contact">
+            <h2>Contact Me</h2>
+            <p>You can reach me at: <a href="omotayotosin65@gmail.com">omotayotosin65@gmail.com</a></p>
+            <!-- You can add a contact form here if you want -->
+            <p>Phone: <a href="tel:+2349148396543">+234(09148396543)</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/omotayotosin</a></p>
+  <p>TikTok: <a href="https://www.tiktok.com/@your handle" target="_blank" rel="noopener noreferrer">@tosin555</a></p>
+          </div>
+          </section>
+        </main>
+    
+      
+        <footer>
+            <p>&copy; <span id="current-year"></span> Omotayo Oluwatosin Blessing. All rights reserved.</p>
+            <button id="themeToggle">Toggle Dark Mode</button>
+        </footer>
+          
+          <style>
+            #about {
+              max-width: 700px;
+              margin: 40px auto;
+              padding: 30px;
+              background-color:rgb(27, 25, 25);
+              border-radius: 12px;
+              box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              color: hsl(0, 26%, 91%);
+              text-align: center;
+            }
+          
+            #about img {
+              border-radius: 50%;
+              width: 180px;
+              height: 180px;
+              object-fit: cover;
+              margin-bottom: 20px;
+              border: 4px solid  hsl(0, 96%, 50%);
+            }
+            .skill-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background:black;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px #6e6a6adc;
+    }
+
+    .skill-name {
+      font-size: 18px;
+      color:white;
+    }
+
+    .circle-wrap {
+      width: 60px;
+      height: 60px;
+      position: relative;
+    }
+
+    svg {
+      transform: rotate(-90deg);
+    }
+
+    .circle-bg {
+      stroke: white;
+    }
+
+    .circle-progress {
+      stroke:hsl(0, 100%, 50%); 
+      transition: stroke-dashoffset 0.8s ease;
+    }
+
+    .circle-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+    }
+          
+            #about h2 {
+              font-size: 2.5rem;
+              color:  hsl(0, 95%, 50%);
+              margin-bottom: 25px;
+              letter-spacing: 1px;
+            }
+          
+            #about p {
+              font-size: 1.1rem;
+              line-height: 1.8;
+              text-align: left;
+            }
+            
+            
+          </style>
+      </section>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
